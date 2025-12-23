@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MODELS</title>
+
+    <style>
+        body {
+            margin: 10px;
+            padding: 10px;
+            background-color: #0f0c09;
+            font-family: Arial, Helvetica, sans-serif;
+            color: wheat;
+        }
+
+
+        .header {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap:100px;
+
+  padding: 15px 35px;
+  border-radius: 30px;
+
+  background: rgba(201, 195, 195, 0.12);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.35),
+    inset 0 1px 1px rgba(255, 255, 255, 0.4);
+
+  z-index: 1000;
+}
+
+
+.header a {
+  text-decoration:double;
+  color: white;
+  font-weight: 500;
+  position: relative;
+}
+
+
+.header a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.7);
+  transition: 1s ease;
+  transform: translateX(-50%);
+  /* transition: transform 0.5s ease; */
+
+  
+}
+
+.header a:hover::after {
+  width: 100%;
+
+}
+
+
+.logo {
+    font-size: 26px;
+    letter-spacing: 3px;
+}
+
+.nav a {
+    margin-left: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav a:hover {
+    color: #c9a45c;
+    font-size: 22px;
+}
+
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 40px;
+            padding: 80px 40px;
+            justify-items: center; 
+        }
+
+        .card {
+            text-align: center;
+        }
+
+        
+        .card img {
+            width: 520px;
+            height: 360px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 3px solid grey;
+
+            
+            transition: transform 0.4s ease;
+        }
+
+        
+        .card img:hover {
+            transform: scale(1.1);
+        }
+
+        .card p {
+            margin-top: 15px;
+            font-size: 25px;
+            letter-spacing: 1px;
+            color: white;
+        }
+
+        
+        .container::after {
+            content: "";
+            grid-column: span 3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+    <div class="logo">ROLLS-ROYCE</div>
+    <!-- <img src="./images/logo.jpg" alt="logo" class="header-img"> -->
+    <nav class="nav">
+        <a href="./index.html">Home</a>
+        <a href="./models.html">Models</a>
+        <a href="./bespoke.html">Bespoke</a>
+        <a href="./ownership.html">Ownership</a>
+        
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <img src="./images/cullinan.jpg" alt="cullinan">
+        <p>CULLINAN</p>
+    </div>
+
+    <div class="card">
+        <img src="./images/ghost.jpg" alt="ghost">
+        <p>GHOST</p>
+    </div>
+
+    <div class="card">
+        <img src="./images/phantom.jpg" alt="phantom">
+        <p>PHANTOM</p>
+    </div>
+
+    <div class="card">
+        <img src="./images/dawn.jpg" alt="dawn">
+        <p>DAWN</p>
+    </div>
+
+    <div class="card">
+        <img src="./images/wraith.jpg" alt="wraith">
+        <p>WRAITH</p>
+    </div>
+
+    <div class="card">
+        <img src="./images/spectre.jpg" alt="spectre">
+        <p>SPECTRE</p>
+    </div>
+
+    <div class="card">
+        <img src="./images/silver spur.jpg" alt="silver spur">
+        <p>SILVER SPUR</p>
+    </div>
+
+    <div class="card">
+        <img src="./images/silver shadow.jpg" alt="silver shadow">
+        <p>SILVER SHADOW</p>
+    </div>
+
+    <div class="card"> 
+      <img src="./images/boat tail.jpg" alt=" boat tail">
+      <p>BOAT TAIL</p>
+    </div>
+
+</div>
+
+</body>
+</html>

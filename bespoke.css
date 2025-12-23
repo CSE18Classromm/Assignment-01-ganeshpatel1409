@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    background-color: #0b0b0b;
+    color: #ffffff;
+}
+
+
+/* .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 70px;
+    border-bottom: 1px solid #333;
+} */
+
+.header {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap:100px;
+
+  padding: 15px 35px;
+  border-radius: 30px;
+
+  background: rgba(201, 195, 195, 0.12);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.35),
+    inset 0 1px 1px rgba(255, 255, 255, 0.4);
+
+  z-index: 1000;
+}
+
+
+.header a {
+  text-decoration:double;
+  color: white;
+  font-weight: 500;
+  position: relative;
+}
+
+
+.header a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.7);
+  transition: 1s ease;
+  transform: translateX(-50%);
+  transition: transform 0.5s ease;
+
+  
+}
+
+.header a:hover::after {
+  width: 100%;
+
+}
+
+
+.logo {
+    font-size: 26px;
+    letter-spacing: 3px;
+}
+
+.nav a {
+    margin-left: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav a:hover {
+    color: #c9a45c;
+    font-size: 22px;
+}
+
+
+
+
+
+
+.hero {
+    height: 90;
+    background: url("") center/cover no-repeat;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 80px;
+    left: 70px;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    letter-spacing: 4px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #ddd;
+    
+}
+
+/* INTRO */
+.intro {
+    padding: 100px 70px;
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    max-width: 800px;
+    margin: auto;
+    color: #ccc;
+    font-size: 18px;
+}
+
+/* BESPOKE SECTIONS */
+.bespoke-section {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.bespoke-section .content {
+    max-width: 500px;
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-left: 3px solid #c9a45c;
+}
+
+/* BACKGROUND IMAGE INSERTION POINTS */
+.interior {
+    background: url("./images/interior.jpg") center/cover no-repeat;
+}
+
+.materials {
+    background: url("./images/material.jpg") center/cover no-repeat;
+}
+
+.craftsmanship {
+    background: url("./images/working.png") center/cover no-repeat;
+}
+
+/* COMMISSION */
+.commission {
+    padding: 100px 70px;
+    text-align: center;
+    background-color: #111;
+}
+
+.commission h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.commission p {
+    color: #ccc;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.commission button {
+    padding: 14px 30px;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid #c9a45c;
+    color: #c9a45c;
+    cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #000;
+    color: #888;
+    border-top: 1px solid #333;
+}
